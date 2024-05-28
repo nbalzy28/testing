@@ -55,9 +55,8 @@ h2 {
 }
 
 #floorPlan {
-    position: absolute;
-    left: 18%;
-    background-color: red;
+    position: relative;
+    left: 150px;
 }
 
     #floorPlan th {
