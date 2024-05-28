@@ -8,18 +8,26 @@ $(document).ready(function () {
     $('.cube').on("dragenter dragover drop", function (event) {
         event.preventDefault();
         if (event.type === 'drop') {
-            var data = event.originalEvent.dataTransfer.getData('Text', $(this).attr('id'));
-            de = $('#' + data).detach();
-            de.appendTo($(this));
+            var data = event.originalEvent.dataTransfer.getData('Text');
+            $("#" + data).appendTo($(this));
         }
     });
 
     $('.pad').on("dragenter dragover drop", function (event) {
         event.preventDefault();
         if (event.type === 'drop') {
-            var data = event.originalEvent.dataTransfer.getData('Text', $(this).attr('id'));
-            de = $('#' + data).detach();
-            de.appendTo($(this));
+            var data = event.originalEvent.dataTransfer.getData('Text');
+            $("#" + data).appendTo($(this));
+        }
+    });
+
+    // Add new employee functionality
+    $('#addEmployeeButton').click(function() {
+        var newEmployeeName = $('#newEmployeeName').val();
+        if (newEmployeeName !== '') {
+            var newEmployeeButton = $('<button class="card" draggable="true">' + newEmployeeName + '</button>');
+            newEmployeeButton.appendTo('.pad');
+            $('#newEmployeeName').val('');
         }
     });
 
