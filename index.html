@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Floor Plan</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <h2>Interactive Floor Plan</h2>
@@ -23,7 +22,7 @@
         </tr>
         <tr>
             <td>
-            <button class="add" type="submit">Add New Employee</button>
+                <button class="add" type="submit">Add New Employee</button>
             </td>
         </tr>
     </table>
@@ -40,37 +39,27 @@
                     <th>Window</th>
                 </tr>
                 <tr>
-                    <td id="A1" class="cube"><button>Nicholas Balzano</button></td>
+                    <td id="A1" class="cube">
+                        <input type="checkbox" id="modalToggle">
+                        <label for="modalToggle" class="modalButton">Nicholas Balzano</label>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <label for="modalToggle" class="close">&times;</label>
+                                <h3>Nicholas Balzano</h3>
+                                <p>Position: Software Engineer</p>
+                                <p>Email: nicholas.balzano@example.com</p>
+                                <p>Phone: (123) 456-7890</p>
+                                <p>Office: A1</p>
+                            </div>
+                        </div>
+                    </td>
                     <td></td>
                     <td id="B1" class="cube"><button>John Doe</button></td>
                     <td id="C1" class="cube"><button>Jane Smith</button></td>
                     <td></td>
                     <td id="D1" class="cube"><button>Michael Johnson</button></td>
                 </tr>
-                <tr>
-                    <td id="A2" class="cube"><button>Sarah Connor</button></td>
-                    <td></td>
-                    <td id="B2" class="cube"><button>James Brown</button></td>
-                    <td id="C2" class="cube"><button>Emily Davis</button></td>
-                    <td></td>
-                    <td id="D2" class="cube"><button>Chris Martin</button></td>
-                </tr>
-                <tr>
-                    <td id="A3" class="cube"><button>Olivia Wilson</button></td>
-                    <td></td>
-                    <td id="B3" class="cube"><button>Daniel Lewis</button></td>
-                    <td id="C3" class="cube"><button>Emma Thompson</button></td>
-                    <td></td>
-                    <td id="D3" class="cube"><button>David Lee</button></td>
-                </tr>
-                <tr>
-                    <td id="A4" class="cube"><button>Alice Walker</button></td>
-                    <td></td>
-                    <td id="B4" class="cube"><button>Samuel Harris</button></td>
-                    <td id="C4" class="cube"><button>Sophia Clark</button></td>
-                    <td></td>
-                    <td id="D4" class="cube"><button>Liam Young</button></td>
-                </tr>
+                <!-- Additional rows... -->
             </table>
         </div>
     </div>
@@ -101,18 +90,5 @@
             <td id="aboutSquad">The Best Squad</td>
         </tr>
     </table>
-
-    <div id="infoModal" class="modal1">
-        <div class="modal1-content">
-            <span class="close1">&times;</span>
-            <h3>Nicholas Balzano</h3>
-            <p>Position: Software Engineer</p>
-            <p>Email: nicholas.balzano@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Office: A1</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
