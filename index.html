@@ -3,91 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Floor Plan</title>
+    <title>Employee Info</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Interactive Floor Plan</h2>
+    <h2>Employee Info</h2>
   
-    <table id="employeePad" class="col-md-2 col-sm-12">
-        <tr>
-            <th class="padLabel">Employee Pad</th>
-        </tr>
-        <tr>
-            <td class="pad">
-                <button class="card" id="1" draggable="true">Joe Doe</button>
-                <button class="card" id="2" draggable="true">Elizabeth Smith</button>
-                <button class="card" id="3" draggable="true">Andrew Anderson</button>
-            </td>
-        </tr>
+    <table id="employeeInfo">
         <tr>
             <td>
-                <button class="add" type="submit">Add New Employee</button>
+                <button class="employeeButton">Nicholas Balzano</button>
             </td>
-        </tr>
-    </table>
-
-    <div class="mapContainer col-md-8 col-sm-12">
-        <div class="map">
-            <table id="floorPlan">
-                <tr>
-                    <th>Window</th>
-                    <th>Window</th>
-                    <th>Window</th>
-                    <th>Window</th>
-                    <th>Window</th>
-                    <th>Window</th>
-                </tr>
-                <tr>
-                    <td id="A1" class="cube">
-                        <input type="checkbox" id="modalToggle">
-                        <label for="modalToggle" class="modalButton">Nicholas Balzano</label>
-                        <div class="modal">
-                            <div class="modal-content">
-                                <label for="modalToggle" class="close">&times;</label>
-                                <h3>Nicholas Balzano</h3>
-                                <p>Position: Software Engineer</p>
-                                <p>Email: nicholas.balzano@example.com</p>
-                                <p>Phone: (123) 456-7890</p>
-                                <p>Office: A1</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td></td>
-                    <td id="B1" class="cube"><button>John Doe</button></td>
-                    <td id="C1" class="cube"><button>Jane Smith</button></td>
-                    <td></td>
-                    <td id="D1" class="cube"><button>Michael Johnson</button></td>
-                </tr>
-                <!-- Additional rows... -->
-            </table>
-        </div>
-    </div>
-
-    <table class="aboutTable col-sm-12 col-md-2">
-        <tr>
-            <th class="aboutHead"></th>
-            <th class="aboutHead">About</th>
-        </tr>
-        <tr>
-            <th class="aboutLabel">Id: </th>
-            <td id="aboutId">12345678</td>
-        </tr>
-        <tr>
-            <th class="aboutLabel">First Name: </th>
-            <td id="aboutFirstName">Test</td>
-        </tr>
-        <tr>
-            <th class="aboutLabel">Last Name: </th>
-            <td id="aboutLastName">User</td>
-        </tr>
-        <tr>
-            <th class="aboutLabel">Title: </th>
-            <td id="aboutTitle">Software Engineer</td>
-        </tr>
-        <tr>
-            <th class="aboutLabel">Squad: </th>
-            <td id="aboutSquad">The Best Squad</td>
         </tr>
     </table>
 </body>
