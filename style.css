@@ -77,6 +77,10 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
 }
 
 .enter-key-tile {
@@ -84,6 +88,10 @@ hr {
     height: 40px;
     margin: 1px;
     border: 1px solid lightgray;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
 
     /* Text */
     font-size: 20px;
