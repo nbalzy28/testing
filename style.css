@@ -69,7 +69,8 @@ hr {
     width: 36px;
     height: 40px;
     margin: 1px;
-    border: 1px solid lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
 
     /* Text */
     font-size: 20px;
@@ -77,21 +78,14 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-    border-radius: 5px;
-    background-color: lightgrey;
-    color: black;
 }
 
 .enter-key-tile {
     width: 76px;
     height: 40px;
     margin: 1px;
-    border: 1px solid lightgray;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: lightgrey;
-    color: black;
 
     /* Text */
     font-size: 20px;
